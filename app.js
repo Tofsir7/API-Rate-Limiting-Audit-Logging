@@ -1,0 +1,22 @@
+const express = require('express');
+
+const app = express();
+
+app.use(express.json());
+
+
+
+app.get('/', (req, res) => {
+  res.json({
+    message: 'Rate Limiting & Audit Logging API',
+    endpoints: {
+      action: 'POST /api/action'
+    },
+    rateLimit: {
+      maxRequests: 10,
+      timeWindow: '1 minute',
+    }
+  });
+});
+
+module.exports = app;
