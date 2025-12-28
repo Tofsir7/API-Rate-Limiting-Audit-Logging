@@ -10,7 +10,7 @@ function logRequest(logData) {
 
   auditLogs.push(logEntry);
 
-  console.log(`[AUDIT] IP: ${logEntry.ip} | Endpoint: ${logEntry.endpoint} | Status: ${logEntry.status} | Time: ${logEntry.timestamp}`);
+  console.log(`IP: ${logEntry.ip} | Endpoint: ${logEntry.endpoint} | Status: ${logEntry.status} | Time: ${logEntry.timestamp}`);
 }
 
 function getAllLogs() {
