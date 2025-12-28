@@ -1,0 +1,27 @@
+{
+  "name": "api-rate-limiting-audit-logging",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Tofsir7/API-Rate-Limiting-Audit-Logging#readme",
+  "bugs": {
+    "url": "https://github.com/Tofsir7/API-Rate-Limiting-Audit-Logging/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tofsir7/API-Rate-Limiting-Audit-Logging.git"
+  },
+  "license": "ISC",
+  "author": "Khayrul Hassan Khan",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.2.1",
+    "morgan": "^1.10.1"
+  }
+}
