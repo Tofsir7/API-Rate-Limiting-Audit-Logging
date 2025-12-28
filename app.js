@@ -1,9 +1,11 @@
 const express = require('express');
+const auditMiddleware = require('./middlewares/auditMiddleware');
 const apiRoutes = require('./routes/api');
 const app = express();
 
 app.use(express.json());
 
+app.use(auditMiddleware);
 
 app.use('/api', apiRoutes);
 app.get('/', (req, res) => {
